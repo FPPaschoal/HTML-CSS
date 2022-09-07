@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+.cartao {
+    background-image: url("./imagens/backgorund.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    padding: 2px 20px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.nome {
+    font-family: 'Fira Code', monospace;
+}
+
+.lista {
+
+    line-height: 1.5em;
+    font-family: 'Fira Code', monospace;
+
+}
+
+.insta {
+    list-style-image: url("./imagens/Insta.png");
+
+}
+
+.twitter {
+    list-style-image: url("./imagens/Twitter.png");
+}
+
+.youtube {
+    list-style-image: url("./imagens/Youtube.png");
+}
+
+.lista a {
+    text-decoration: none;
+    color: black
+}
+
+.lista a:hover {
+    text-decoration: underline;
+}
+
+.lista a:active {
+    text-shadow: 1px 1px rgba(107, 107, 202, 0.623);
+}

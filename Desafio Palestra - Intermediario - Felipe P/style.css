@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(21, 22, 22);
+    background-image: url(./imagens/background_palestra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    background-color: rgb(72, 197, 206);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+/*------------ Conteudo principal ---------------*/
+main {
+    background-image: url(./imagens/people.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+/*-------------- Caixa do Formulário --------------*/
+
+.CaixaFormulario {
+    background-color: #FFFFFFbb;
+    max-width: 230px;
+    height:400px ;
+    padding: 20px;
+    float: right;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+/*-------------- Formulário --------------*/
+
+input,
+select {
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(./imagens/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+.submit {
+    box-sizing: border-box;
+    background-color: rgb(72, 197, 206);
+    font-size: 15px;
+    color: white;
+}
+
+.submit:hover {
+    box-sizing: border-box;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 7.1px;
+}
+
+/*-------------- Rodapé --------------*/
+
+footer {
+    background-color: #151616;
+    padding: 40px;
+    text-align: center;
+
+}
+
+img {
+    width: 160px;
+
+}
+
+.Sobre {
+    display: inline-block;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.Sobre h3,
+.Sobre p {
+    margin-bottom: 20px;
+}
+
+.Sobre h3 {
+    font-size: 24px;
+}
+
+
+/*---------------- Responsivo ----------------*/
+@media screen and (min-width: 1000px){
+    h1{
+        
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 890px){
+    h1{
+        
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 720px){
+.CaixaFormulario{
+    float: none;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-left:0 ;
+    margin-right: 0px;
+
+  
+}
+.Sobre{
+   min-width: 70vw;
+   margin:0;
+   margin-top: 20px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+}
+
